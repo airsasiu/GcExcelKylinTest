@@ -46,6 +46,7 @@ public class GcExcel_Kylin_Test {
     // manage worksheets
     @Test
     public void GcExcel_Test_01() {
+        System.out.println("Start Test GcExcel_Test_01");
         Workbook wb = new Workbook();
         wb.getWorksheets().add();
         wb.getWorksheets().addBefore(wb.getWorksheets().get(0));
@@ -62,6 +63,7 @@ public class GcExcel_Kylin_Test {
     // set and get value
     @Test
     public void GcExcel_Test_02() {
+        System.out.println("Start Test GcExcel_Test_02");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getWorksheets().get(0);
 
@@ -78,6 +80,7 @@ public class GcExcel_Kylin_Test {
     // set and get style
     @Test
     public void GcExcel_Test_03() {
+        System.out.println("Start Test GcExcel_Test_03");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
         sheet.getRange("A1").setValue("blue content");
@@ -91,6 +94,7 @@ public class GcExcel_Kylin_Test {
     // change worksheet layout
     @Test
     public void GcExcel_Test_04() {
+        System.out.println("Start Test GcExcel_Test_04");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
 
@@ -111,6 +115,7 @@ public class GcExcel_Kylin_Test {
     // formula
     @Test
     public void GcExcel_Test_05() {
+        System.out.println("Start Test GcExcel_Test_05");
         Workbook wb = new Workbook();
         wb.getOptions().getFormulas().setMaximumIterations(1000);
         wb.getOptions().getFormulas().setMaximumChange(0.000001);
@@ -137,6 +142,7 @@ public class GcExcel_Kylin_Test {
     // chart
     @Test
     public void GcExcel_Test_06() {
+        System.out.println("Start Test GcExcel_Test_06");
         Workbook wb = new Workbook();
 
         IWorksheet sheet = wb.getWorksheets().get(0);
@@ -165,6 +171,7 @@ public class GcExcel_Kylin_Test {
     // table
     @Test
     public void GcExcel_Test_07() {
+        System.out.println("Start Test GcExcel_Test_07");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
 
@@ -190,6 +197,7 @@ public class GcExcel_Kylin_Test {
     // pivotTable
     @Test
     public void GcExcel_Test_08(){
+        System.out.println("Start Test GcExcel_Test_08");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
         sheet.getRange("G1:L16").setValue(PIVOTSOURCEDATA);
@@ -223,6 +231,7 @@ public class GcExcel_Kylin_Test {
     // sort data
     @Test
     public void GcExcel_Test_09(){
+        System.out.println("Start Test GcExcel_Test_09");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
 
@@ -249,6 +258,7 @@ public class GcExcel_Kylin_Test {
     // search data
     @Test
     public void GcExcel_Test_10(){
+        System.out.println("Start Test GcExcel_Test_10");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
 
@@ -281,6 +291,7 @@ public class GcExcel_Kylin_Test {
     // condition format
     @Test
     public void GcExcel_Test_11(){
+        System.out.println("Start Test GcExcel_Test_11");
         String jsonText = "[" +
                 "{\"Area\": \"North America\",\"City\": \"Chicago\",\"Category\": \"Consumer Electronics\",\"Name\": \"Bose 785593-0050\",\"Revenue\": 92800},\n" +
                 "{\"Area\": \"North America\",\"City\": \"New York\",\"Category\": \"Consumer Electronics\",\"Name\": \"Bose 785593-0050\",\"Revenue\": 92800},\n" +
@@ -300,6 +311,7 @@ public class GcExcel_Kylin_Test {
     // to json
     @Test
     public void GcExcel_Test_12(){
+        System.out.println("Start Test GcExcel_Test_12");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
         sheet.getRange("A1:F7").setValue(SOURCEDATA);
@@ -315,6 +327,7 @@ public class GcExcel_Kylin_Test {
     // save-load sjs
     @Test
     public void GcExcel_Test_13(){
+        System.out.println("Start Test GcExcel_Test_13");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
         sheet.getRange("A1").setValue("test");
@@ -335,6 +348,7 @@ public class GcExcel_Kylin_Test {
     // save-load xlsx
     @Test
     public void GcExcel_Test_14(){
+        System.out.println("Start Test GcExcel_Test_14");
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
         sheet.getRange("A1").setValue("test");
@@ -355,6 +369,7 @@ public class GcExcel_Kylin_Test {
     // export pdf
     @Test
     public void GcExcel_Test_15(){
+        System.out.println("Start Test GcExcel_Test_15");
         Workbook.FontsFolderPath = "fonts";
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
