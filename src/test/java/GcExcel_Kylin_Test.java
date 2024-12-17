@@ -355,6 +355,7 @@ public class GcExcel_Kylin_Test {
     // export pdf
     @Test
     public void GcExcel_Test_15(){
+        Workbook.FontsFolderPath = ".\fonts";
         Workbook wb = new Workbook();
         IWorksheet sheet = wb.getActiveSheet();
         sheet.getRange("A1").setValue("test");
